@@ -540,3 +540,39 @@
 button.btn {
     margin-top: 20px;
 }
+/* Đảm bảo ảnh có chiều cao đồng đều và không bị cắt */
+.service-item img {
+    max-width: 100%;
+    height: 250px; /* Chiều cao cố định để giữ ảnh đồng đều */
+    object-fit: cover; /* Giữ tỉ lệ ảnh và cắt vừa khung */
+}
+
+/* Đảm bảo căn chỉnh flexbox để nội dung văn bản và hình ảnh đồng bộ */
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%; /* Đảm bảo tất cả các phần dịch vụ đều có chiều cao đồng đều */
+}
+
+.service-item h4 {
+    margin-bottom: 15px; /* Giữ khoảng cách hợp lý giữa ảnh và tiêu đề */
+    font-size: 1.5rem; /* Tăng cỡ chữ cho nổi bật */
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.5; /* Tăng khoảng cách giữa các dòng văn bản */
+    text-align: justify; /* Căn đều văn bản để tạo sự chuyên nghiệp */
+}
+
+.service-item img {
+    margin-bottom: 15px;
+}
+
+/* Định dạng bổ sung cho giao diện sinh động hơn */
+.service-item:hover {
+    background-color: #f7f7f7; /* Thêm hiệu ứng hover */
+    transition: background-color 0.3s ease-in-out;
+}
