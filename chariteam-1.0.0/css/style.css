@@ -103,7 +103,10 @@
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-
+.navbar .navbar-brand img {
+    width: 75px; /* Điều chỉnh chiều rộng */
+    height: auto; /* Giữ nguyên tỷ lệ khung hình */
+  }
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         margin-top: 10px;
@@ -112,7 +115,7 @@
     }
 
     .navbar .navbar-nav .nav-link {
-        padding: 10px 0;
+        padding: 20px 0;
     }
 }
 
@@ -407,7 +410,10 @@
     text-transform: capitalize;
     transition: .3s;
 }
-
+.footer .footer-logo img {
+    width: 80px;
+    height: auto;
+}
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
@@ -575,4 +581,142 @@ button.btn {
 .service-item:hover {
     background-color: #f7f7f7; /* Thêm hiệu ứng hover */
     transition: background-color 0.3s ease-in-out;
+}
+/* Đảm bảo hình ảnh và văn bản căn chỉnh tốt trên di động */
+.custom-service-item {
+    display: flex;
+    flex-direction: column; /* Xếp theo chiều dọc */
+    align-items: center; /* Căn giữa nội dung */
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.custom-service-item img {
+    max-width: 100%;
+    height: auto; /* Giữ tỉ lệ ảnh */
+    margin-bottom: 10px; /* Khoảng cách giữa ảnh và tiêu đề */
+}
+
+.custom-service-item h4 {
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và mô tả */
+}
+
+.custom-service-item p {
+    margin: 0; /* Đảm bảo không có khoảng cách thừa */
+}
+
+/* Media query cho thiết bị nhỏ */
+@media (max-width: 600px) {
+    .custom-service-item {
+        flex-direction: column; /* Đảm bảo xếp dọc trên màn hình nhỏ */
+    }
+}
+
+/* Hiệu ứng mượt cho việc ẩn/hiện nội dung */
+.fade-in-out {
+    transition: opacity 0.5s ease;
+}
+
+
+
+/*contact*/
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container.contact-page {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start; /* Căn lên đầu */
+    justify-content: space-between; /* Chia đều hai bên */
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Form section - Left */
+.form-section {
+    flex: 2;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #ff6f0f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #e65c09;
+}
+
+/* Contact section - Right */
+.contact-info {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Căn đầu bên trên */
+}
+
+.contact-details p, 
+.contact-details ul {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-details ul li {
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-weight: bold;
+    color: #ff6f0f;
+    margin-bottom: 10px;
+}
+
+/* Điều chỉnh khoảng cách và định dạng cho responsive */
+@media (max-width: 768px) {
+    .container.contact-page {
+        flex-direction: column;
+    }
+    .form-section, .contact-info {
+        width: 100%;
+    }
+    .contact-info {
+        margin-top: 20px;
+    }
 }

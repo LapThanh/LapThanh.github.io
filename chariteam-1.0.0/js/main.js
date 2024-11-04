@@ -78,6 +78,14 @@
         }
     });
 
+    // Cố định chiều cao cho carousel item (thêm đoạn này)
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let maxHeight = 0;
+    carouselItems.forEach(item => {
+        maxHeight = Math.max(maxHeight, item.offsetHeight);
+    });
+    carouselItems.forEach(item => {
+        item.style.height = maxHeight + 'px';
+    });
     
 })(jQuery);
-

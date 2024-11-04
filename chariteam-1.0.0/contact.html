@@ -40,32 +40,37 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>55/3 Ho Van Hue St. Phu Nhuan Ward. Viet Nam </small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>contact@bimvz.com.vn</small>
+<!-- Navbar Start -->
+<div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+            <small><i class="fa fa-map-marker-alt me-2"></i>55/3 Ho Van Hue St. Phu Nhuan Ward. Viet Nam </small>
+            <small class="ms-4"><i class="fa fa-envelope me-2"></i>contact@bimvz.com.vn</small>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- Align the brand and nav in the same flex container -->
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <img src="img/logo.jpeg" alt="Logo">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex align-items-center" id="navbarCollapse">
+            <!-- Remove ms-auto and align the nav-links to the left -->
+            <div class="navbar-nav p-4 p-lg-0 ms-3"> 
+                <a href="index.html" class="nav-item nav-link ">ホームページ</a>
+                <a href="service.html" class="nav-item nav-link">サービス</a>
+                <a href="company.html" class="nav-item nav-link">会社概要</a>
+                <a href="contact.html" class="nav-item nav-link active">お問い合わせ</a>
+
             </div>
         </div>
+    </nav>
+</div>
+<!-- Navbar End -->
 
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold m-0" style="color:#FF6F0F">Bim<span class="text-white">Vz</span></h1>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">ホームページ</a>
-                    <a href="service.html" class="nav-item nav-link">サービス</a>
-                    <a href="company.html" class="nav-item nav-link">会社概要</a>
-                    <a href="contact.html" class="nav-item nav-link active">お問い合わせ</a>
-                </div>
-
-            </div>
-        </nav>
-    </div>
     <!-- Navbar End -->
 
 <!-- Page Header Start -->
@@ -90,134 +95,105 @@
 </div>
 <!-- Page Header End -->
 
-<!-- Contact Start -->
-<div class="container-xxl py-5 contact-form-section">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-12">
-                <h2 class="text-center">お問い合わせ</h2>
-                <form>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="surname" placeholder="氏名 (姓)">
-                                <label for="surname">氏名 (姓) <span style="color: red;">*</span></label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="firstname" placeholder="氏名 (名)">
-                                <label for="firstname">氏名 (名) <span style="color: red;">*</span></label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="furigana-surname" placeholder="氏名フリガナ (姓)">
-                                <label for="furigana-surname">氏名フリガナ (姓) <span style="color: red;">*</span></label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="furigana-firstname" placeholder="氏名フリガナ (名)">
-                                <label for="furigana-firstname">氏名フリガナ (名) <span style="color: red;">*</span></label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="company" placeholder="会社名">
-                                <label for="company">会社名</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="メール">
-                                <label for="email">メール <span style="color: red;">*</span></label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="phone" placeholder="電話番号">
-                                <label for="phone">電話番号</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="zipcode" placeholder="郵便番号">
-                                <label for="zipcode">郵便番号</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="address" placeholder="住所">
-                                <label for="address">住所</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="お問い合わせ内容" id="message" style="height: 100px"></textarea>
-                                <label for="message">お問い合わせ内容 <span style="color: red;">*</span></label>
-                            </div>
-                        </div>
-                    
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary py-2 px-3">
-                                送信
-                                <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                    <i class="fa fa-arrow-right"></i>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+<!-- Contact Form Layout -->
+<div class="container contact-page">
+    <div class="row">
+        <!-- Form section on the left -->
+        <div class="col-md-8 form-section">
+            <form>
+                <div class="form-group mb-3">
+                    <label for="lastname"><i class="fa fa-user me-2"></i> 氏名 (姓)</label>
+                    <input type="text" class="form-control" id="lastname" >
+                </div>
+                <div class="form-group mb-3">
+                    <label for="firstname"><i class="fa fa-user me-2"></i> 氏名 (名)</label>
+                    <input type="text" class="form-control" id="firstname" >
+                </div>
+                <div class="form-group mb-3">
+                    <label for="company"><i class="fa fa-building me-2"></i> 会社名</label>
+                    <input type="text" class="form-control" id="company" >
+                </div>
+                <div class="form-group mb-3">
+                    <label for="address"><i class="fa fa-map-marker me-2"></i> ご住所</label>
+                    <input type="text" class="form-control" id="address" >
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email"><i class="fa fa-envelope me-2"></i> メールアドレス</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="phone"><i class="fa fa-phone me-2"></i> 電話番号</label>
+                    <input type="text" class="form-control" id="phone" >
+                </div>
+                <div class="form-group mb-3">
+                    <label for="message"><i class="fa fa-comment me-2"></i> お問い合わせ内容</label>
+                    <textarea class="form-control" id="message" placeholder="お問い合わせ内容を入力してください" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">送信</button>
+            </form>
+        </div>
+
+        <!-- Contact section on the right -->
+        <div class="col-md-4 contact-info">
+            <div class="contact-details">
+                <p><strong>contact@bimvz.com.vn</strong></p>
+                <ul>
+                    <li>建築設計に関する問い合わせ</li>
+                    <li>BIM支援業務に関する問い合わせ</li>
+                    <li>BIM企業研修に関する問い合わせ</li>
+                </ul>
+                <p><strong>thanh@bimvz.com.vn</strong></p>
+                <ul>
+                    <li>お見積り</li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-<!-- Contact End -->
+
+
 
 <!-- Include external CSS file -->
 <link rel="stylesheet" href="styles/contact-form.css">
 
 
 
-<!-- Footer Start -->
- <!-- Footer Start -->
-<div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-4">
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-                <h1 class="fw-bold m-0" style="color:#FF6F0F">Bim<span class="text-white">Vz</span></h1>
-                <p>「今すぐお問い合わせいただき、特別価格と質の高いサービスをお受け取りください。」.</p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-light mb-4">Address</h5>
-                <p><i class="fa fa-map-marker-alt me-3"></i>55/3 Ho Van Hue St. Phu Nhuan Ward, Viet Nam</p>
-                <p><i class="fa fa-phone-alt me-3"></i>0355621724</p>
-                <p><i class="fa fa-envelope me-3"></i>contact@bimvz.com.vn</p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-light mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="company.html">About Us</a>
-                <a class="btn btn-link" href="contact.html">Contact Us</a>
-                <a class="btn btn-link" href="service.html">Our Services</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid copyright">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Your Site Name</a>, All Rights Reserved.
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/logo.jpeg" alt="Logo" style="width: 80px; height: auto;"> 
+                    <p>「今すぐお問い合わせいただき、特別価格と質の高いサービスをお受け取りください。」.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    Designed By <a href="index.html">BIMVZ</a>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>55/3 Ho Van Hue St. Phu Nhuan Ward, Viet Nam</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>0355621724</p>
+                    <p><i class="fa fa-envelope me-3"></i>contact@bimvz.com.vn</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="company.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
                 </div>
             </div>
         </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Your Site Name</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a href="index.html">BIMVZ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!-- Footer End -->
-
+    <!-- Footer End -->
 
 
 

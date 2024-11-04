@@ -2,182 +2,163 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
-    <title>BIM Visualization</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="utf-8">
+  <title>BIM Visualization</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <link href="img/favicon.ico" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  
+<!-- Navbar Start -->
+<div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+            <small><i class="fa fa-map-marker-alt me-2"></i>55/3 Ho Van Hue St. Phu Nhuan Ward. Viet Nam </small>
+            <small class="ms-4"><i class="fa fa-envelope me-2"></i>contact@bimvz.com.vn</small>
+        </div>
     </div>
-    <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>55/3 Ho Van Hue St. Phu Nhuan Ward, Viet Nam</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>contact@bimvz.com.vn</small>
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- Align the brand and nav in the same flex container -->
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <img src="img/logo.jpeg" alt="Logo">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex align-items-center" id="navbarCollapse">
+            <!-- Remove ms-auto and align the nav-links to the left -->
+            <div class="navbar-nav p-4 p-lg-0 ms-3"> 
+                <a href="index.html" class="nav-item nav-link ">ホームページ</a>
+                <a href="service.html" class="nav-item nav-link">サービス</a>
+                <a href="company.html" class="nav-item nav-link active">会社概要</a>
+                <a href="contact.html" class="nav-item nav-link">お問い合わせ</a>
             </div>
         </div>
+    </nav>
+</div>
+<!-- Navbar End -->
 
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold m-0" style="color:#FF6F0F">Bim<span class="text-white">Vz</span></h1>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">ホームページ</a>
-                    <a href="service.html" class="nav-item nav-link">サービス</a>
-                    <a href="company.html" class="nav-item nav-link active">会社概要</a>
-                    <a href="contact.html" class="nav-item nav-link">お問い合わせ</a>
+
+  <div class="container-fluid p-0 mb-5">
+    <div class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="img/citycity.jpg" alt="Image" style="height: 500px; object-fit: cover;">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-7 pt-5">
+                  <h1 class="display-4 text-white mb-3 animated slideInDown">Company</h1>
+                  <p class="fs-5 text-white mb-5 animated slideInDown">会社概要</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>会社概要</h2>
+        <ul>
+          <li>会社名: B.I.Mビジュアライゼーション</li>
+          <li>設立: 2024年7月</li>
+          <li>本社所在地: フーニャン、ホーチミン市</li>
+          <li>代表・専務: ターン・グエン</li>
+          <li>資本金: 210.000 US$ (令和6年)</li>
+          <li>取引銀行: VIETCOMBANK HCM City</li>
+          <li>従業員数: 10名 (2024年)</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>使用ソフト</h2>
+        <ul>
+          <li>Revit＋Dynamo、Python、C#API</li>
+          <li>Rhinoceros</li>
+          <li>ArchiCAD、AutoCAD、AutoLisp</li>
+          <li>Navisworks、Lumion</li>
+          <li>Twinmotion、3dsMax、SketchUP</li>
+          <li>Civil 3D、V-Ray</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>業務・サービス</h2>
+        <ul>
+          <li>①意匠・構造BIMモデル</li>
+          <li>②仮設・施工他BIMモデル</li>
+          <li>③点群モデル処理</li>
+          <li>④各種ビデオ制作</li>
+          <li>⑤設計図、施工図(建築,躯体)</li>
+          <li>⑥設備BIMモデル (統合モデル)</li>
+          <li>⑦各種プログラム開発</li>
+          <li>⑧VR (VR, AR、MR等)制作</li>
+          <li>⑨Autodesk Civil 3D モデル</li>
+          <li>⑩BIM人材紹介・派遣</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/logo.jpeg" alt="Logo" style="width: 80px; height: auto;"> 
+                    <p>「今すぐお問い合わせいただき、特別価格と質の高いサービスをお受け取りください。」.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>55/3 Ho Van Hue St. Phu Nhuan Ward, Viet Nam</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>0355621724</p>
+                    <p><i class="fa fa-envelope me-3"></i>contact@bimvz.com.vn</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="company.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
                 </div>
             </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
-
-    <!-- Page Header Start -->
-    <div class="container-fluid p-0 mb-5">
-        <div class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/citycity.jpg" alt="Image" style="height: 500px; object-fit: cover;">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Company</h1>
-                                    <p class="fs-5 text-white mb-5 animated slideInDown">会社概要</p>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Your Site Name</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a href="index.html">BIMVZ</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Page Header End -->
+    <!-- Footer End -->
 
-    <div class="custom-page">
-        <h1>会社概要</h1>
-
-        <table>
-            <tr>
-                <th>会社名</th>
-                <td>B.I.Mビジュアライゼーション</td>
-            </tr>
-            <tr>
-                <th>設立</th>
-                <td>2024年7月</td>
-            </tr>
-            <tr>
-                <th>本社所在地</th>
-                <td>フーニャン、ホーチミン市</td>
-            </tr>
-            <tr>
-                <th>代表・専務</th>
-                <td>ターン・グエン</td>
-            </tr>
-            <tr>
-                <th>資本金</th>
-                <td>210.000 US$（令和6年）</td>
-            </tr>
-            <tr>
-                <th>取引銀行</th>
-                <td>VIETCOMBANK HCM City</td>
-            </tr>
-            <tr>
-                <th>従業員数</th>
-                <td>10名 (2024年)</td>
-            </tr>
-            <tr>
-                <th>使用ソフト</th>
-                <td>
-                    Revit＋Dynamo、Python、C#API、Rhinoceros、ArchiCAD、AutoCAD、AutoLisp、<br>
-                    Navisworks、Lumion、Twinmotion、3dsMax、SketchUP、Civil 3D、V-Ray
-                </td>
-            </tr>
-        </table>
-    </div>
-
-
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-4">
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-                <h1 class="fw-bold m-0" style="color:#FF6F0F">Bim<span class="text-white">Vz</span></h1>
-                <p>「今すぐお問い合わせいただき、特別価格と質の高いサービスをお受け取りください。」.</p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-light mb-4">Address</h5>
-                <p><i class="fa fa-map-marker-alt me-3"></i>55/3 Ho Van Hue St. Phu Nhuan Ward, Viet Nam</p>
-                <p><i class="fa fa-phone-alt me-3"></i>0355621724</p>
-                <p><i class="fa fa-envelope me-3"></i>contact@bimvz.com.vn</p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <h5 class="text-light mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="company.html">About Us</a>
-                <a class="btn btn-link" href="contact.html">Contact Us</a>
-                <a class="btn btn-link" href="service.html">Our Services</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid copyright">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Your Site Name</a>, All Rights Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    Designed By <a href="index.html">BIMVZ</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Footer End -->
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
