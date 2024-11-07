@@ -402,7 +402,7 @@
 
 .footer .btn.btn-link {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     padding: 0;
     text-align: left;
     color: rgba(255,255,255,0.5);
@@ -440,7 +440,7 @@
 }
 
 .footer .copyright {
-    padding: 25px 0;
+    padding: 10px 0;
     font-size: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
 }
@@ -671,7 +671,7 @@ body {
     font-size: 16px;
     color: #fff;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .btn-primary:hover {
@@ -708,15 +708,53 @@ body {
     margin-bottom: 10px;
 }
 
+/* Điều chỉnh phần form để label và input nằm ngang */
+.form-group {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 15px; /* Khoảng cách giữa các trường */
+}
+
+label {
+    min-width: 150px; /* Đặt độ rộng tối thiểu cho nhãn */
+    text-align: right; /* Căn chỉnh nhãn về phía bên phải */
+    margin-right: 15px; /* Khoảng cách giữa nhãn và input */
+    white-space: nowrap; /* Ngăn ngừa chữ bị xuống dòng */
+}
+
+input {
+    flex-grow: 1; /* Cho phép input chiếm phần còn lại của không gian */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.required {
+    color: red; /* Đặt màu đỏ cho dấu sao */
+    font-weight: bold; /* Làm đậm dấu sao */
+}
+
 /* Điều chỉnh khoảng cách và định dạng cho responsive */
 @media (max-width: 768px) {
     .container.contact-page {
-        flex-direction: column;
+        flex-direction: column; /* Chuyển sang dạng cột */
     }
+
     .form-section, .contact-info {
-        width: 100%;
+        width: 100%; /* Đảm bảo các phần chiếm toàn bộ chiều rộng */
+        padding-left: 0; /* Xóa khoảng cách bên trái khi ở dạng cột */
     }
+
     .contact-info {
-        margin-top: 20px;
+        margin-top: 20px; /* Khoảng cách giữa các phần */
+    }
+
+    label {
+        width: auto; /* Giảm độ rộng của label khi ở màn hình nhỏ */
+        margin-right: 10px;
+    }
+
+    .contact-details p, 
+    .contact-details ul {
+        font-size: 14px; /* Giảm kích thước font trên màn hình nhỏ */
     }
 }
